@@ -1,0 +1,17 @@
+@use 'reset';
+@use 'vars';
+@import 'weather-icons/weather-icons.min.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html body {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgb(167, 240, 255);
+  background: radial-gradient(circle, rgba(167, 240, 255, 1) 0%, rgba(24, 150, 205, 1) 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
