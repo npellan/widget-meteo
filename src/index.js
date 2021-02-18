@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
-import App from './components/App';
+import './styles/index.scss';
+import WidgetMeteo from './components/WidgetMeteo';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <WidgetMeteo />
   </React.StrictMode>,
   document.getElementById('root')
 );
