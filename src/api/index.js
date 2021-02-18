@@ -1,12 +1,14 @@
 import axios from 'axios';
 
-const apiKey = '547ac6529bcbee0a5b1e5de4d129b8cc'
+const {
+    REACT_APP_API_BASE_URL,
+    REACT_APP_API_KEY,
+} = process.env;
 
 export default axios.create({
-    // baseURL: 'http://localhost:1234',
-    baseURL: `http://api.openweathermap.org/data/2.5/weather`,
+    baseURL: REACT_APP_API_BASE_URL,
     params: {
-        appid: apiKey,
+        appid: REACT_APP_API_KEY ? REACT_APP_API_KEY : null,
     },
     timeout: 5000,
 });
